@@ -1,0 +1,38 @@
+.wrapper {
+    width: 25%;
+    background-color: antiquewhite;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .leftc {
+    width: 150px;
+    height: 250px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .item {
+    padding: 2px 20px 2px 20px;
+    border: 2px dashed black;
+    margin: 5px;
+    text-align: center;
+  }

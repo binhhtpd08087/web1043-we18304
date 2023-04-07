@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="lab7.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Lab 7</h2>
+      <i>Hello</i> <br />
+      <div class="main">
+        <div id="bin" class="leftc">ABC</div>
+        <div class="rightc">
+          <span class="item" id="one"> 1</span>
+          <span class="item" id="two">2</span>
+          <span class="item" id="three"> 3</span>
+          <span class="item" id="four">4</span>
+          <span class="item" id="five"> 5</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      let items = document.getElementsByClassName("item");
+      for (let i = 0; i < items.length; i++) {
+        let item = items[i];
+        item.setAttribute("draggable", true);
+        item.addEventListener("dragstart", (e) => {
+          e.dataTransfer.setData("itemId", item.id);
+        });
+      }
+      let bin = document.getElementById("bin");
+      bin.addEventListener("dragover", (e) => {
+        if (e.preventDefault) e.preventDefault();
+      });
+      bin.addEventListener("drop", (e) => {
+        let itemId = e.dataTransfer.getData("itemId");
+        let item = document.getElementById(itemId);
+        bin.appendChild(item);
+      });
+    </script>
+  </body>
+</html>
