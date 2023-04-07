@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Player</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		#video-container {
+			width: 640px;
+			height: 360px;
+			margin: 0 auto;
+			background-color: #333;
+			position: relative;
+		}
+
+		#myVideo {
+			width: 100%;
+			height: 100%;
+			object-fit: fill;
+			display: block;
+		}
+
+		#video-controls {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			padding: 10px;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		#video-controls button {
+			background-color: transparent;
+			border: none;
+			color: #fff;
+			font-size: 18px;
+			cursor: pointer;
+			margin: 0 5px;
+		}
+
+		#video-controls button:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="video-container">
+		<video id="myVideo" width="640" height="360" controls>
+			<source src="video/videonhac.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+		<div id="video-controls">
+			<button onclick="playVideo()">Play</button>
+			<button onclick="pauseVideo()">Pause</button>
+			<button onclick="stopVideo()">Stop</button>
+			<button onclick="volumeUp()">Volume Up</button>
+			<button onclick="volumeDown()">Volume Down</button>
+			<button onclick="toggleLoop()">Toggle Loop</button>
+		</div>
+	</div>
+
+	<script>
+		var myVideo = document.getElementById("myVideo");
+
+		function playVideo() {
+			myVideo.play();
+		}
+
+		function pauseVideo() {
+			myVideo.pause();
+		}
+
+		function stopVideo() {
+			myVideo.currentTime = 0;
+			myVideo.pause();
+		}
+// Để đưa thời gian video về trạng thái ban đầu, đầu tiên ta gán giá trị 0 cho thuộc tính currentTime của đối tượng video.
+		function volumeUp() {
+			myVideo.volume += 0.1;
+		}
+
+		function volumeDown() {
+			myVideo.volume -= 0.1;
+		}
+
+		function toggleLoop() {
+			myVideo.loop = !myVideo.loop;
+		}
+	</script>
+
+</body>
+</html>
