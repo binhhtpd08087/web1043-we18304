@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ chính hãng Thuỵ Sĩ</title>
+    <link rel="icon" href="images/LOGO.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- begin  -->
+    <header>
+        <div class="taskbar-top fixed">
+            <div class="container">
+                <div class="fleft header-top-left">
+                    <img src="img/Logo_the_gioi_dong_ho_pc-Recovered.png" alt="" width="220" height="50px">
+                </div>
+                <div class="fleft header-top-right">
+                    <div class="fleft top-right-search">
+                        <button class="search-icon">
+                            <span class="ti-search"></span>
+                        </button>
+                        <input type="text" placeholder="Tìm kiếm..." autocomplete="off" class="txt-search">
+                    </div>
+                    <div class="fleft top-right-map">
+                        <a href="#"><i class="ti-location-pin">Cửa hàng</i></a>
+                    </div>
+                    <div class="fleft top-right-phone">
+                        <i class="ti-headphone-alt"></i>
+                        <span class="top-right-phone-hotline">HOTLINE</span>
+                        <a href="#" class="top-right-phone-2">0366764838</a>
+                    </div>
+                    <div class="fleft top-right-shopping">
+                        <a href="#" class="shopping-mini">
+                            <i class="ti-shopping-cart"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                    <div class="fixed top-right-login">
+                        <a href="login.html"><i class="ti-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="main-menu">
+                    <ul>
+                        <li class="menu-item"><a href="#" class="son">TRANG CHỦ</a></li>
+                        <li class="menu-item"><a href="#">THƯƠNG HIỆU</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-2"><a href="#">ĐỒNG HỒ NOBINNI</a></li>
+                                <li class="menu-item-2"><a href="#">ĐỒNG HỒ KASSAN</a></li>
+                                <li class="menu-item-2"><a href="#">DỒNG HỒ TEINTOP</a></li>
+                                <li class="menu-item-2"><a href="#">ĐỒNG HỒ HAZEAL</a></li>
+                                <li class="menu-item-2"><a href="#">ĐỒNG HỒ NAMKIN</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="dongHoNam.html">ĐỒNG HỒ NAM</a></li>
+                        <li class="menu-item"><a href="#">ĐỒNG HỒ NỮ</a></li>
+                        <li class="menu-item"><a href="#">ĐỒNG HỒ ĐÔI</a></li>
+                        <li class="menu-item"><a href="#">ĐỒNG HỒ ĐỂ BÀN</a></li>
+                        <li class="menu-item"><a href="#">ĐỒNG HỒ TREO TƯỜNG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End nav -->
+    <!-- header -->
+    <!-- Set up your HTML -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img/intro.jpg">
+        </div>   
+        <div class="mySlides fade">
+          <img src="img/intro1.jpg">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/dong-ho-nam-intro-titoni-83743-sy-582-39mm-mau-demi-vang-bac-61d80eb015fe3-07012022165808.jpg">
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() { 
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+    <div class="img-container">
+        <img src="img/banner_pc_sale11-1img.png" alt="">
+    </div>
+    <!-- Phần section -->
+    <section id="main-content">
+        <div class="container-section">
+            <div class="home-box home-box-tax">
+                <h2 class="box-title">
+                    <span>Danh mục sản phẩm</span>
+                </h2>
+                <div id="intro-owl-1">
+                    <div class="autoplay">
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ cơ.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ cơ</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ da dây.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ da dày</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ dây thép.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ dây thép</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ nam.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ nam</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ nữ.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ nữ</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ treo tường.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ treo tường</span></a>
+                        <a href="#"><img class="tax-product-title1" src="img/đồng hồ đôi.jpg" alt="">
+                            <span class="tax-product-title">Đồng hồ đôi</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-box">
+                <h2 class="box-title">
+                    <span>Sản phẩm bán chạy</span>
+                </h2>
+                <div id="wrapper">
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="MuaHang.html" class="product-thumb">
+                                        <img src="img/tải xuống.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="#" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">BAGS</a>
+                                <a href="" class="product-name">Đồng hồ nam chính hãng LOBINNI L16056</a>
+                                <div class="product-price">5.460.000 VNĐ<p> 8.400.000 </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="MuaHang.htmL" class="product-thumb">
+                                        <img src="img/đồng hồ 1.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="#" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/dong ho 2.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (1).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button load-more">Xem thêm sản phẩm</button>
+                </div>
+                <h2 class="box-title">
+                    <span>Sản phẩm mới</span>
+                </h2>
+                <div id="wrapper">
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/đồng hồ 1.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/dong ho 2.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$2.999.,00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (1).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (1).jpg" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (1) (1).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$2.999.,00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (2).jpg" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$2.999.,00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (2).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (3).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống (4).png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$2.999.,00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống.jpg" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$2.999.,00</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="producttop">
+                                    <a href="" class="product-thumb">
+                                        <img src="img/tải xuống.png" alt="" width="300px">
+                                    </a>
+                                    <span class="icon-instal">Trả góp 0%</span>
+                                    <!-- Mua ngay -->
+                                    <a href="" class="buy-now">Mua ngay</a>
+
+                                </div>
+                            </div>
+                            <div class="produc-info">
+                                <a href="" class="product-cat">Bags</a>
+                                <a href="" class="product-name">Sản phẩm #</a>
+                                <div class="product-price">$1.499 <P>$2.300</P>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button load-more">Xem thêm sản phẩm</button>
+                    <h2 class="box-title1">
+                        <span>Thương hiệu phân khối</span>
+                    </h2>
+                    <div id="intro-owl-2">
+                        <div class="your-class">
+                            <div class="slider-thuong-hieu-item">
+                                <a href="#"><img src="img/1111111.jpg" alt=""></a>
+                                <a href="#"><img src="img/hazeal_png-1.jpg" alt=""></a>
+                                <a href="#"><img src="img/logo-lobinni-black-new1_(1).png" alt=""></a>
+                                <a href="#"><img src="img/logo-thuong-hieu3.jpg" alt=""></a>
+                                <a href="#"><img src="img/logo_namkin_350x250.png" alt=""></a>
+                                <a href="#"><img src="img/logo_kassaw (1).jpg" alt=""></a>
+                                <a href="#"><img src="img/logo-thuong-hieu3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="box-title1">
+                        <span>Chúng tôi cam kết</span>
+                    </h2>
+                    <div class="img-container">
+                        <img src="img/5-cam-ket-thw-vn-pc-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container-footer">
+                <div class="footer-top-list">
+                    <div class="row">
+                        <div class="col-md-4 footer-box">
+                            <div class="footer-box-1">
+                                <p style="text-align: left;">
+                                    <span style="font-size: 12pt;color: #ff0;">
+                                        <strong>THẾ GIỚI ĐỒNG HỒ - THEGIOIDONGHO.VIP</strong></span>
+                                </p>
+                                <P style="text-align: left;">
+                                    <span style="color: #fff;">
+                                        <span style="font-size: 12pt;">Hotline/Zalo: 0366764838</span>
+                                    </span>
+                                </P>
+                                <P style="text-align: left;">
+                                    <span style="color: #fff;">
+                                        <span style="font-size: 12pt;">Email: dungntps22378@fpt.edu.vn</span>
+                                    </span>
+                                </P>
+                                <P style="text-align: left;">
+                                    <span style="color: #fff;">
+                                        <span style="font-size: 12pt;">Showroom: NTD Đồng xoài 1,Bình Phước</span>
+                                    </span>
+                                </P>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 footer-box-2">
+                            <p class="footer-title-1">CHÍNH SÁCH CHUNG</p>
+                            <div class="footer-sub footer-menu">
+                                <ul>
+                                    <li><a href="#">Giới thiệu về chúng tôi</a></li>
+                                    <li><a href="#">Chính sách về bảo hành</a></li>
+                                    <li><a href="#">Chính sách đổi trả, hoàn tiền</a></li>
+                                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5 footer-box-3">
+                            <p class="footer-title-2">THEO DÕI CHÚNG TÔI TRÊN</p>
+                            <div class="footer-title-pr">
+                                <ul>
+                                    <li class="icons-follow"><a href="#"><i class="ti-facebook"></i> Facebook</a></li>
+                                    <li class="icons-follow"><a href="#"><i class="ti-twitter-alt"></i> Twitter</a></li>
+                                    <li class="icons-follow"><a href="#"><i class="ti-youtube"></i> Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: "1784956665094089",
+                    xfbml: true,
+                    version: "v2.6"
+                });
+            };
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-customerchat" page_id="111210178160483"></div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 1,
+                autoplay: NodeFilter,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: NodeFilter
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+        });
+        $('.a').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1
+        });
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+</body>
+
+</html>
