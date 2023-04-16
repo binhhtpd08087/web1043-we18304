@@ -3,6 +3,9 @@
     margin: 0;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background:#2a3740;
     
@@ -56,44 +59,8 @@ body {
 .fleft{
     float: left;
 }
-.top-right-search {
-    left: 500px;
-    margin: 8px 6px 0 0;
-    position: absolute;
-    transition: .5s;
-}
-.search-icon{
-    width: 34px;
-    height: 34px;
-    float: left;
-    margin: 10px 6px 0 0;
-    background: 0;
-    color: #fff;
-    border: 0;
-    border-radius: 5px;
-    outline: 0;
-    font-size: 20px;
-    transition: .5s;
-}
-.search-icon:hover{
-    background-color: #e4e8ee;
-    color: red;
-}
-.txt-search {
-    width: 240px;
-    height: 34px;
-    float: left;
-    padding: 5px 5px 0 0;
-    background: 0;
-    border: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    outline: 0;
-    font-size: 15px;
-    font-style: italic;
-    color: white;
-}
 .top-right-map{
-    right: 350px;
+    right: 690px;
     position: absolute;
     margin: 20px 40px 0 70px;
 }
@@ -109,7 +76,7 @@ body {
     position: relative;
 }
 .top-right-phone {
-    right: 178px;
+    right: 558px;
     margin: 12px 0 0 30px;
     padding-left: 45px;
     position: absolute;
@@ -145,7 +112,7 @@ body {
 }
 .top-right-shopping{
     right: 40px;
-    margin: 27px 0 0 50px;
+    margin: 23px 0 0 50px;
     position: absolute;
 }
 .top-right-shopping a i:hover{
@@ -153,13 +120,14 @@ body {
     transition: .5s;
 }
 .shopping-mini{
+    right: 400px;
     width: 50px;
     display: block;
     padding-left: 28px;
     position: relative;
 }
 .shopping-mini i{
-    width: 20px;
+    width: 200px;
     height: 20px;
     position: absolute;
     font-size: 20px;
@@ -167,19 +135,9 @@ body {
     left: 0;
     color: white;
 }
-.shopping-mini span{
-    width: 16px;
-    height: 16px;
-    display: block;
-    background: #d92b34;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-}
 .top-right-login{
-    margin: 20px 0 0 50px;
+    right: 330px;
+    margin: 18px 0 0 50px;
     position: relative;
 }
 .top-right-login a i:hover{
@@ -214,16 +172,18 @@ button, input, select, textarea {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #525563;
 }
 .main-menu>ul {
     display: block;
     margin: 0;
     list-style: none;
+    background-color: red;
 }
 .main-menu>ul>li {
     position: relative;
     float: left;
-    border-right: 1px solid #0e1016;
+    border-right: 1px solid #525563;
 }
 .main-menu>ul>li>a {
     display: block;
@@ -239,7 +199,7 @@ button, input, select, textarea {
 .main-menu>ul>li>a:hover{
     color: yellow;
     transition: .25s;
-    background-color: #292c38;
+    background-color: #525563;
 }
 /* menu con */
 .sub-menu{
@@ -275,13 +235,13 @@ button, input, select, textarea {
     z-index: -1;
     width: 1242px;
     margin: 0px auto;
-    
 }
 #intro-owl-1{
     width: 1242px;
     margin: 0px auto;
 }
 .slideshow-container {
+    padding-top: 100px;
     text-align: center;
 }
 .img-container{
@@ -433,7 +393,6 @@ ul.products li .produc-info .product-price p{
     margin-right: 5px;
     float: left;
     color: #c1c3c8;
-    
 }
 .load-more {
     width: 310px;
