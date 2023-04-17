@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đồng hồ chính hãng Thuỵ Sĩ</title>
-    <link rel="icon" href="img/lo">
+    <link rel="icon" href="img/logoshop.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
 </head>
@@ -18,6 +18,87 @@
                     <img src="img/Logo_the_gioi_dong_ho_pc-Recovered.png" alt="" width="220" height="50px" style="padding-left: 350px;">
                 </div>
                 <div class="fleft header-top-right">
+                    <div class="countdown">
+                        <style>
+                            .countdown-container {
+                                max-width: 600px;
+                                margin: 0 auto;
+                                max-height: 10px;
+                            }
+                            .countdown-title {
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                            }
+                            .countdown-item {
+                                display: inline-block;
+                                margin: 0 10px;
+                            }
+                            .countdown-value {
+                                font-size: 36px;
+                                font-weight: bold;
+                                color: red;
+                            }
+                            .countdown-label {
+                                font-size: 14px;
+                                color: yellow;
+                                margin-top: 2px;
+                            }
+                        </style>
+                        <div class="countdown-container">
+                            <div class="countdown-timer">
+                              <div class="countdown-item">
+                                <div class="countdown-value" id="countdown-hours"></div>
+                                <div class="countdown-label">Hours</div>
+                              </div>
+                              <div class="countdown-item">
+                                <div class="countdown-value" id="countdown-minutes"></div>
+                                <div class="countdown-label">Minutes</div>
+                              </div>
+                              <div class="countdown-item">
+                                <div class="countdown-value" id="countdown-seconds"></div>
+                                <div class="countdown-label">Seconds</div>
+                              </div>
+                            </div>
+                          </div>
+                          <script>
+                            // Set the date and time we're counting down to
+                            var countDownDate = new Date();
+                            countDownDate.setHours(22,0,0); // 10:00 PM
+                            if (countDownDate.getHours() < 7) {
+                            countDownDate.setDate(countDownDate.getDate() + 1);
+                            countDownDate.setHours(7,0,0); // 7:00 AM next day
+                            }
+                    
+                            // Update the count down every 1 second
+                            var countdown = setInterval(function() {
+                    
+                            // Get the current date and time
+                            var now = new Date().getTime();
+                    
+                            // Calculate the distance between now and the count down date
+                            var distance = countDownDate - now;
+                    
+                            // Check if the countdown is over
+                            if (distance < 0) {
+                                clearInterval(countdown);
+                                document.getElementById("countdown-hours").innerHTML = "00";
+                                document.getElementById("countdown-minutes").innerHTML = "00";
+                                document.getElementById("countdown-seconds").innerHTML = "00";
+                                return;
+                            }
+                    
+                            // Calculate the hours, minutes, and seconds
+                            var hours = Math.floor(distance / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                            // Display the hours, minutes, and seconds
+                            document.getElementById("countdown-hours").innerHTML = hours < 10 ? "0" + hours : hours;
+                            document.getElementById("countdown-minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+                            document.getElementById("countdown-seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+                            }, 1000);
+                          </script>
+                    </div>
                     <div class="fleft top-right-map">
                         <a href="#map"><i class="ti-location-pin">Cửa hàng</i></a>
                     </div>
@@ -44,7 +125,8 @@
 							<li class="menu-item"><a href="#wrapper1">ĐỒNG HỒ NAM</a></li>
 							<li class="menu-item"><a href="#wrapper2">ĐỒNG HỒ NỮ</a></li>
 							<li class="menu-item"><a href="#wrapper3">ĐỒNG HỒ ĐÔI</a></li>
-							<li class="menu-item"><a href="#wrapper4">ĐỒNG HỒ TREO TƯỜNG</a></li>
+							<li class="menu-item"><a href="media.html">ĐỒNG HỒ TREO TƯỜNG</a></li>
+                            <li class="menu-item"><a href="media.html">GIỚI THIỆU SẢN PHẨM MỚI</a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,7 +137,7 @@
     <!-- header -->
     <!-- Set up your HTML -->
 	<!--login-->
-	<h1>Contact Us</h1>
+	<h1>Đăng Nhập</h1>
 	<form name="contactForm" onsubmit="return validateForm()" method="post">
 		<label for="name">Name:</label><br>
 		<input type="text" id="name" name="name" required><br>
@@ -70,20 +152,20 @@
 			var name = document.forms["contactForm"]["name"].value;
 			var email = document.forms["contactForm"]["email"].value;
 			var phone = document.forms["contactForm"]["phone"].value;
-			var phoneRegex = /^[0-9]{10,11}$/;
+			var phoneRegex = /^[0]{11}$/;
 			var emailRegex = /\S+@\S+\.\S+/;
 
 			if (!phone.match(phoneRegex)) {
-				alert("Please enter a valid phone number (10-11 digits)");
+				alert("Xin vui lòng nhập một số điện thoại hợp lệ (11 chữ số)");
 				return false;
 			}
 
 			if (!email.match(emailRegex)) {
-				alert("Please enter a valid email address");
+				alert("Vui lòng nhập địa chỉ email hợp lệ");
 				return false;
 			}
 
-			// Other validation rules for name, etc.
+			// Các quy tắc xác thực khác cho tên, v.v.
 
 			return true;
 			}

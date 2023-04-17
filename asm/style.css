@@ -43,12 +43,7 @@ body {
 }
 .taskbar-top img{
     margin-top: 8px;
-    margin-left: 10px;
-}
-.taskbar-top .search{
-    margin-left: 230px;
-    margin-top: -50px;
-   
+    margin-left: 120px;
 }
 .header-top-left{
     width: 20%;
@@ -59,10 +54,13 @@ body {
 .fleft{
     float: left;
 }
+.countdown {
+    right: 800px;
+}
 .top-right-map{
     right: 690px;
     position: absolute;
-    margin: 20px 40px 0 70px;
+    margin: 10px 40px 0 70px;
 }
 .top-right-map:hover a{
     transition: .5s;
@@ -77,7 +75,7 @@ body {
 }
 .top-right-phone {
     right: 558px;
-    margin: 12px 0 0 30px;
+    margin: 5px 0 0 30px;
     padding-left: 45px;
     position: absolute;
 }
@@ -112,7 +110,7 @@ body {
 }
 .top-right-shopping{
     right: 40px;
-    margin: 23px 0 0 50px;
+    margin: 12px 0 0 50px;
     position: absolute;
 }
 .top-right-shopping a i:hover{
@@ -137,7 +135,7 @@ body {
 }
 .top-right-login{
     right: 330px;
-    margin: 18px 0 0 50px;
+    margin: 8px 0 0 50px;
     position: relative;
 }
 .top-right-login a i:hover{
